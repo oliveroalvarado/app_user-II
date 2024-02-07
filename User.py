@@ -4,7 +4,7 @@
 # give the user the ability to create a post
 # '''
 class Info:
-    user_input = ""
+    user_input = [""]
 
     def __init__(self, name=None, last_name=None, age=None, location=None):
         self.name = name
@@ -35,8 +35,8 @@ class Info:
             self.what_you_wrote()
 
         elif choice == "RETURNING USER":
-            input("Welcome Back: ")
-            print("Sorry we don't want you here")
+            self.name = input("Welcome Back: ")
+            print(f"{self.name}, sorry we don't want you here.")
             print("GOODBYE")
         
         else:
